@@ -2,3 +2,5 @@
 
 
 void ClearScreen();
+
+void CreateBoard();
