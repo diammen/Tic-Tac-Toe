@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="clearscreen.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ticUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils.h" />
