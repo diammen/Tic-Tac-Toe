@@ -36,31 +36,112 @@ int main()
 		switch (playerOne.input)
 		{
 		case 1:
-			display[0][0] = 'x';
+			if (display[0][0] != playerTwo.token)
+			{
+				display[0][0] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 2:
-			display[0][1] = 'x';
+			if (display[0][1] != playerTwo.token)
+			{
+				display[0][1] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 3:
-			display[0][2] = 'x';
+			if (display[0][2] != playerTwo.token)
+			{
+				display[0][2] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 4:
-			display[1][0] = 'x';
+			if (display[1][0] != playerTwo.token)
+			{
+				display[1][0] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 5:
-			display[1][1] = 'x';
+			if (display[1][1] != playerTwo.token)
+			{
+				display[1][1] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 6:
-			display[1][2] = 'x';
+			if (display[1][2] != playerTwo.token)
+			{
+				display[1][2] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 7:
-			display[2][0] = 'x';
+			if (display[2][0] != playerTwo.token)
+			{
+				display[2][0] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 8:
-			display[2][1] = 'x';
+			if (display[2][1] != playerTwo.token)
+			{
+				display[2][1] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 9:
-			display[2][2] = 'x';
+			if (display[2][2] != playerTwo.token)
+			{
+				display[2][2] = 'x';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		}
 		// Check win condition.
@@ -92,31 +173,112 @@ int main()
 		switch (playerTwo.input)
 		{
 		case 1:
-			display[0][0] = 'o';
+			if (display[0][0] != playerOne.token)
+			{
+				display[0][0] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 2:
-			display[0][1] = 'o';
+			if (display[0][1] != playerOne.token)
+			{
+				display[0][1] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 3:
-			display[0][2] = 'o';
+			if (display[0][2] != playerOne.token)
+			{
+				display[0][2] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 4:
-			display[1][0] = 'o';
+			if (display[1][0] != playerOne.token)
+			{
+				display[1][0] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 5:
-			display[1][1] = 'o';
+			if (display[1][1] != playerOne.token)
+			{
+				display[1][1] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 6:
-			display[1][2] = 'o';
+			if (display[1][2] != playerOne.token)
+			{
+				display[1][2] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 7:
-			display[2][0] = 'o';
+			if (display[2][0] != playerOne.token)
+			{
+				display[2][0] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 8:
-			display[2][1] = 'o';
+			if (display[2][1] != playerOne.token)
+			{
+				display[2][1] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		case 9:
-			display[2][2] = 'o';
+			if (display[2][2] != playerOne.token)
+			{
+				display[2][2] = 'o';
+			}
+			else
+			{
+				counter--;
+				cout << "That place is already occupied." << endl;
+				sleep_for(0.5s);
+			}
 			break;
 		}
 		// Check win condition
