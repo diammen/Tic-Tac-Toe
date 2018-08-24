@@ -60,3 +60,33 @@ int GetPlayer2Input(Player b)
 	}
 	return b.input;
 }
+
+// Check to see if anyone won.
+bool CheckForWin(char display[3][3], char token)
+{
+	// Check for horizontal matches
+	for (int i = 0; i < 3; ++i)
+	{
+		if (display[i][0] == token && display[i][1] == token && display[i][2] == token)
+		{
+			return true;
+		}
+	}
+
+	// Check diagonal
+	if ((display[0][0] == token && display[1][1] == token && display[2][2] == token) ||
+		 display[0][2] == token && display[1][1] == token && display[2][0] == token)
+	{
+		return true;
+	}
+
+	// Check vertical
+	for (int i = 0; i < 3; ++i)
+	{
+		if (display[0][i] == token && display[1][i] == token && display[2][i] == token)
+		{
+			return true;
+		}
+	}
+	return false;
+}
