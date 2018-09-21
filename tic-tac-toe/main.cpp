@@ -31,12 +31,13 @@ int main()
 	while (!gameOver)
 	{
 		// Game loop
+		cout << "Player one's turn" << endl;
 		playerOne.input = GetPlayer1Input(playerOne);
 		// Update the game board's array with player one's input.
 		switch (playerOne.input)
 		{
 		case 1:
-			if (display[0][0] != playerTwo.token)
+			if (display[0][0] == '1')
 			{
 				display[0][0] = 'x';
 			}
@@ -48,7 +49,7 @@ int main()
 			}
 			break;
 		case 2:
-			if (display[0][1] != playerTwo.token)
+			if (display[0][1] == '2')
 			{
 				display[0][1] = 'x';
 			}
@@ -60,7 +61,7 @@ int main()
 			}
 			break;
 		case 3:
-			if (display[0][2] != playerTwo.token)
+			if (display[0][2] == '3')
 			{
 				display[0][2] = 'x';
 			}
@@ -72,7 +73,7 @@ int main()
 			}
 			break;
 		case 4:
-			if (display[1][0] != playerTwo.token)
+			if (display[1][0] == '4')
 			{
 				display[1][0] = 'x';
 			}
@@ -84,7 +85,7 @@ int main()
 			}
 			break;
 		case 5:
-			if (display[1][1] != playerTwo.token)
+			if (display[1][1] == '5')
 			{
 				display[1][1] = 'x';
 			}
@@ -96,7 +97,7 @@ int main()
 			}
 			break;
 		case 6:
-			if (display[1][2] != playerTwo.token)
+			if (display[1][2] == '6')
 			{
 				display[1][2] = 'x';
 			}
@@ -108,7 +109,7 @@ int main()
 			}
 			break;
 		case 7:
-			if (display[2][0] != playerTwo.token)
+			if (display[2][0] == '7')
 			{
 				display[2][0] = 'x';
 			}
@@ -120,7 +121,7 @@ int main()
 			}
 			break;
 		case 8:
-			if (display[2][1] != playerTwo.token)
+			if (display[2][1] == '8')
 			{
 				display[2][1] = 'x';
 			}
@@ -132,7 +133,7 @@ int main()
 			}
 			break;
 		case 9:
-			if (display[2][2] != playerTwo.token)
+			if (display[2][2] == '9')
 			{
 				display[2][2] = 'x';
 			}
@@ -147,6 +148,7 @@ int main()
 		// Check win condition.
 		playerOne.win = CheckForWin(display, playerOne.token);
 		counter++;
+
 		// Check for a draw condition.
 		if (counter == 9 && !gameOver)
 		{
@@ -155,6 +157,7 @@ int main()
 			sleep_for(1.5s);
 			return 0;
 		}
+
 		// Clear console screen.
 		ClearScreen();
 		// Display board with player one's input.
@@ -167,13 +170,14 @@ int main()
 			return 0;
 		}
 		// Get player two's input.
+		cout << "Player two's turn" << endl;
 		playerTwo.input = GetPlayer2Input(playerTwo);
 
 		// Update the game board with player two's input.
 		switch (playerTwo.input)
 		{
 		case 1:
-			if (display[0][0] != playerOne.token)
+			if (display[0][0] == '1')
 			{
 				display[0][0] = 'o';
 			}
@@ -185,7 +189,7 @@ int main()
 			}
 			break;
 		case 2:
-			if (display[0][1] != playerOne.token)
+			if (display[0][1] == '2')
 			{
 				display[0][1] = 'o';
 			}
@@ -197,7 +201,7 @@ int main()
 			}
 			break;
 		case 3:
-			if (display[0][2] != playerOne.token)
+			if (display[0][2] == '3')
 			{
 				display[0][2] = 'o';
 			}
@@ -209,7 +213,7 @@ int main()
 			}
 			break;
 		case 4:
-			if (display[1][0] != playerOne.token)
+			if (display[1][0] == '4')
 			{
 				display[1][0] = 'o';
 			}
@@ -221,7 +225,7 @@ int main()
 			}
 			break;
 		case 5:
-			if (display[1][1] != playerOne.token)
+			if (display[1][1] == '5')
 			{
 				display[1][1] = 'o';
 			}
@@ -233,7 +237,7 @@ int main()
 			}
 			break;
 		case 6:
-			if (display[1][2] != playerOne.token)
+			if (display[1][2] == '6')
 			{
 				display[1][2] = 'o';
 			}
@@ -245,7 +249,7 @@ int main()
 			}
 			break;
 		case 7:
-			if (display[2][0] != playerOne.token)
+			if (display[2][0] == '7')
 			{
 				display[2][0] = 'o';
 			}
@@ -257,7 +261,7 @@ int main()
 			}
 			break;
 		case 8:
-			if (display[2][1] != playerOne.token)
+			if (display[2][1] == '8')
 			{
 				display[2][1] = 'o';
 			}
@@ -269,7 +273,7 @@ int main()
 			}
 			break;
 		case 9:
-			if (display[2][2] != playerOne.token)
+			if (display[2][2] == '9')
 			{
 				display[2][2] = 'o';
 			}
